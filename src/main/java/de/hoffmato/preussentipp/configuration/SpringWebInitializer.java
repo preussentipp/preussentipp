@@ -20,7 +20,7 @@ public class SpringWebInitializer implements WebApplicationInitializer {
         context.setServletContext(servletContext);
         // Spring MVC front controller
         Dynamic servlet = servletContext.addServlet("dispatcher", new DispatcherServlet(context));
-        servlet.addMapping("/");
+        servlet.addMapping("/*");
         servlet.setLoadOnStartup(1);
     }
 }

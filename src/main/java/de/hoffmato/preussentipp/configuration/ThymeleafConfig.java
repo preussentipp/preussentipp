@@ -34,6 +34,7 @@ public class ThymeleafConfig extends WebMvcConfigurerAdapter implements Applicat
 
 	@Bean
 	public ViewResolver viewResolver() {
+		System.out.println("Keksblöd");
 		ThymeleafViewResolver resolver = new ThymeleafViewResolver();
 		resolver.setTemplateEngine(templateEngine());
 		resolver.setCharacterEncoding(UTF8);
