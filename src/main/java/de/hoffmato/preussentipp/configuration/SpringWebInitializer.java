@@ -14,13 +14,13 @@ public class SpringWebInitializer implements WebApplicationInitializer {
 
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
-        System.out.println("KEKS123");
     	AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
-        context.register(ThymeleafConfig.class);
+        context.register(SpringConfig.class);
         context.setServletContext(servletContext);
         // Spring MVC front controller
         Dynamic servlet = servletContext.addServlet("dispatcher", new DispatcherServlet(context));
         servlet.addMapping("/*");
         servlet.setLoadOnStartup(1);
+
     }
 }
