@@ -1,10 +1,10 @@
-package de.hoffmato.preussentipp.hmac.configuration.security;
+package de.hoffmato.preussentipp.configuration.security;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 
-import de.hoffmato.preussentipp.hmac.dto.Profile;
-import de.hoffmato.preussentipp.hmac.dto.UserDTO;
+import de.hoffmato.preussentipp.dto.Profile;
+import de.hoffmato.preussentipp.dto.UserDTO;
 
 import java.util.Collection;
 

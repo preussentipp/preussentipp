@@ -1,15 +1,14 @@
-package de.hoffmato.preussentipp.hmac.rest;
+package de.hoffmato.preussentipp.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import de.hoffmato.preussentipp.hmac.dto.LoginDTO;
-import de.hoffmato.preussentipp.hmac.dto.UserDTO;
-import de.hoffmato.preussentipp.hmac.service.AuthenticationService;
+import de.hoffmato.preussentipp.dto.LoginDTO;
+import de.hoffmato.preussentipp.dto.UserDTO;
+import de.hoffmato.preussentipp.service.AuthenticationService;
 
 import javax.servlet.http.HttpServletResponse;
 

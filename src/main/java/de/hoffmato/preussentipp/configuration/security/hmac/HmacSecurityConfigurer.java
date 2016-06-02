@@ -1,10 +1,10 @@
-package de.hoffmato.preussentipp.hmac.configuration.security.hmac;
+package de.hoffmato.preussentipp.configuration.security.hmac;
 
 import org.springframework.security.config.annotation.SecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.DefaultSecurityFilterChain;
 
-import de.hoffmato.preussentipp.hmac.configuration.security.XAuthTokenFilter;
+import de.hoffmato.preussentipp.configuration.security.XAuthTokenFilter;
 
 /**
  * Hmac Security filter configurer

@@ -1,4 +1,4 @@
-package de.hoffmato.preussentipp.hmac.service;
+package de.hoffmato.preussentipp.service;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -8,9 +8,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
-import de.hoffmato.preussentipp.hmac.configuration.security.SecurityUser;
-import de.hoffmato.preussentipp.hmac.dto.UserDTO;
-import de.hoffmato.preussentipp.hmac.mock.MockUsers;
+import de.hoffmato.preussentipp.configuration.security.SecurityUser;
+import de.hoffmato.preussentipp.dto.UserDTO;
+import de.hoffmato.preussentipp.mock.MockUsers;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,14 +1,14 @@
-package de.hoffmato.preussentipp.hmac.configuration.security;
+package de.hoffmato.preussentipp.configuration.security;
 
 import org.springframework.util.Assert;
 import org.springframework.web.filter.GenericFilterBean;
 
-import de.hoffmato.preussentipp.hmac.configuration.security.hmac.HmacException;
-import de.hoffmato.preussentipp.hmac.configuration.security.hmac.HmacSigner;
-import de.hoffmato.preussentipp.hmac.configuration.security.hmac.HmacUtils;
-import de.hoffmato.preussentipp.hmac.dto.UserDTO;
-import de.hoffmato.preussentipp.hmac.mock.MockUsers;
-import de.hoffmato.preussentipp.hmac.service.AuthenticationService;
+import de.hoffmato.preussentipp.configuration.security.hmac.HmacException;
+import de.hoffmato.preussentipp.configuration.security.hmac.HmacSigner;
+import de.hoffmato.preussentipp.configuration.security.hmac.HmacUtils;
+import de.hoffmato.preussentipp.dto.UserDTO;
+import de.hoffmato.preussentipp.mock.MockUsers;
+import de.hoffmato.preussentipp.service.AuthenticationService;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

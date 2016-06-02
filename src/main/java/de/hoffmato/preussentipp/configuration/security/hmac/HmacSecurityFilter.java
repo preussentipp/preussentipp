@@ -1,4 +1,4 @@
-package de.hoffmato.preussentipp.hmac.configuration.security.hmac;
+package de.hoffmato.preussentipp.configuration.security.hmac;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.Charsets;

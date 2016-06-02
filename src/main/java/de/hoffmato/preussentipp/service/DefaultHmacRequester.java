@@ -1,10 +1,10 @@
-package de.hoffmato.preussentipp.hmac.service;
+package de.hoffmato.preussentipp.service;
 
 import org.springframework.stereotype.Service;
 
-import de.hoffmato.preussentipp.hmac.configuration.security.hmac.HmacRequester;
-import de.hoffmato.preussentipp.hmac.dto.UserDTO;
-import de.hoffmato.preussentipp.hmac.mock.MockUsers;
+import de.hoffmato.preussentipp.configuration.security.hmac.HmacRequester;
+import de.hoffmato.preussentipp.dto.UserDTO;
+import de.hoffmato.preussentipp.mock.MockUsers;
 
 import javax.servlet.http.HttpServletRequest;
 

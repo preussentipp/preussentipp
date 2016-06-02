@@ -8,15 +8,15 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@Controller
+//@Controller
 public class IndexController {
 
-    @RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
-    public String index(Model model) {
-        model.addAttribute("recipient", "World");
-        //return "index.html";
-        return "index.html";
-    }
+//    @RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
+//    public String index(Model model) {
+//        model.addAttribute("recipient", "World");
+//        //return "index.html";
+//        return "index";
+//    }
     
 //    @RequestMapping(value = "/admin", method = RequestMethod.GET)
 //    public String adminPage(ModelMap model) {

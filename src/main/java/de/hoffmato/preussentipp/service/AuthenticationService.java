@@ -1,4 +1,4 @@
-package de.hoffmato.preussentipp.hmac.service;
+package de.hoffmato.preussentipp.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -11,11 +11,11 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 
-import de.hoffmato.preussentipp.hmac.configuration.security.SecurityUser;
-import de.hoffmato.preussentipp.hmac.configuration.security.hmac.*;
-import de.hoffmato.preussentipp.hmac.dto.LoginDTO;
-import de.hoffmato.preussentipp.hmac.dto.UserDTO;
-import de.hoffmato.preussentipp.hmac.mock.MockUsers;
+import de.hoffmato.preussentipp.configuration.security.SecurityUser;
+import de.hoffmato.preussentipp.configuration.security.hmac.*;
+import de.hoffmato.preussentipp.dto.LoginDTO;
+import de.hoffmato.preussentipp.dto.UserDTO;
+import de.hoffmato.preussentipp.mock.MockUsers;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
@@ -114,7 +114,7 @@ public class AuthenticationService {
     /**
      * Authentication for every request
      * - Triggered by every http request except the authentication
-     * @see de.hoffmato.preussentipp.hmac.configuration.security.XAuthTokenFilter
+     * @see de.hoffmato.preussentipp.configuration.security.XAuthTokenFilter
      * Set the authenticated user in the Spring Security context
      * @param username username
      */

@@ -1,10 +1,10 @@
-package de.hoffmato.preussentipp.hmac.rest;
+package de.hoffmato.preussentipp.rest;
 
 import org.springframework.web.bind.annotation.*;
 
-import de.hoffmato.preussentipp.hmac.dto.Profile;
-import de.hoffmato.preussentipp.hmac.dto.UserDTO;
-import de.hoffmato.preussentipp.hmac.mock.MockUsers;
+import de.hoffmato.preussentipp.dto.Profile;
+import de.hoffmato.preussentipp.dto.UserDTO;
+import de.hoffmato.preussentipp.mock.MockUsers;
 
 import javax.validation.Valid;
 import java.util.ArrayList;

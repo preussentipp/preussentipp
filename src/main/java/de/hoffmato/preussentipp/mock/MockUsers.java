@@ -1,9 +1,9 @@
-package de.hoffmato.preussentipp.hmac.mock;
+package de.hoffmato.preussentipp.mock;
 
 import org.springframework.beans.BeanUtils;
 
-import de.hoffmato.preussentipp.hmac.dto.Profile;
-import de.hoffmato.preussentipp.hmac.dto.UserDTO;
+import de.hoffmato.preussentipp.dto.Profile;
+import de.hoffmato.preussentipp.dto.UserDTO;
 
 import java.util.*;
 

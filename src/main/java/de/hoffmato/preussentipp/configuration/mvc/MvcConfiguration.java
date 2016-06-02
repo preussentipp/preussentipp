@@ -1,4 +1,4 @@
-package de.hoffmato.preussentipp.hmac.configuration.mvc;
+package de.hoffmato.preussentipp.configuration.mvc;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;

@@ -1,4 +1,4 @@
-package de.hoffmato.preussentipp.hmac.dto;
+package de.hoffmato.preussentipp.dto;
 
 /**
  * User profile enum

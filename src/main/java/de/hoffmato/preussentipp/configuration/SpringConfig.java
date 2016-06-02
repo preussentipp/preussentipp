@@ -7,6 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.thymeleaf.TemplateEngine;
@@ -21,12 +22,17 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan("de.hoffmato.preussentipp")
+@ComponentScan(basePackages = { "de.hoffmato.preussentipp.controller", "de.hoffmato.preussentipp.rest", "de.hoffmato.preussentipp.service" })
 public class SpringConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
 
 	private static final String UTF8 = "UTF-8";
 
 	private ApplicationContext applicationContext;
+
+	@Override
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+	}
 
 	@Override
 	public void setApplicationContext(ApplicationContext applicationContext) {
@@ -36,25 +42,25 @@ public class SpringConfig extends WebMvcConfigurerAdapter implements Application
 	@Bean
 	public ViewResolver viewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-//		resolver.setTemplateEngine(templateEngine());
-//		resolver.setCharacterEncoding(UTF8);
-		resolver.setPrefix("/WEB-INF/pages/");
-//		resolver.setSuffix("");
+		// resolver.setTemplateEngine(templateEngine());
+		// resolver.setCharacterEncoding(UTF8);
+		resolver.setPrefix("/WEB-INF/views/");
+		resolver.setSuffix(".html");
 		return resolver;
 	}
 
-//	private TemplateEngine templateEngine() {
-//		SpringTemplateEngine engine = new SpringTemplateEngine();
-//		engine.setTemplateResolver(templateResolver());
-//		return engine;
-//	}
-//
-//	private ITemplateResolver templateResolver() {
-//		SpringResourceTemplateResolver resolver = new SpringResourceTemplateResolver();
-//		resolver.setApplicationContext(applicationContext);
-//		resolver.setPrefix("/WEB-INF/pages/");
-//		resolver.setTemplateMode(TemplateMode.HTML);
-//		return resolver;
-//	}
+	// private TemplateEngine templateEngine() {
+	// SpringTemplateEngine engine = new SpringTemplateEngine();
+	// engine.setTemplateResolver(templateResolver());
+	// return engine;
+	// }
+	//
+	// private ITemplateResolver templateResolver() {
+	// SpringResourceTemplateResolver resolver = new SpringResourceTemplateResolver();
+	// resolver.setApplicationContext(applicationContext);
+	// resolver.setPrefix("/WEB-INF/pages/");
+	// resolver.setTemplateMode(TemplateMode.HTML);
+	// return resolver;
+	// }
 
 }

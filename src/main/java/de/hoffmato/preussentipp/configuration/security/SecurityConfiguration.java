@@ -1,4 +1,4 @@
-package de.hoffmato.preussentipp.hmac.configuration.security;
+package de.hoffmato.preussentipp.configuration.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -17,12 +17,12 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import de.hoffmato.preussentipp.hmac.configuration.security.hmac.HmacRequester;
-import de.hoffmato.preussentipp.hmac.configuration.security.hmac.HmacSecurityConfigurer;
-import de.hoffmato.preussentipp.hmac.dto.UserDTO;
-import de.hoffmato.preussentipp.hmac.mock.MockUsers;
-import de.hoffmato.preussentipp.hmac.service.AuthenticationService;
-import de.hoffmato.preussentipp.hmac.service.HmacUserDetailsService;
+import de.hoffmato.preussentipp.configuration.security.hmac.HmacRequester;
+import de.hoffmato.preussentipp.configuration.security.hmac.HmacSecurityConfigurer;
+import de.hoffmato.preussentipp.dto.UserDTO;
+import de.hoffmato.preussentipp.mock.MockUsers;
+import de.hoffmato.preussentipp.service.AuthenticationService;
+import de.hoffmato.preussentipp.service.HmacUserDetailsService;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package de.hoffmato.preussentipp.hmac.configuration.security.hmac;
+package de.hoffmato.preussentipp.configuration.security.hmac;
 
 import com.nimbusds.jose.*;
 import com.nimbusds.jose.crypto.MACSigner;
