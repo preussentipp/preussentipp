@@ -1,16 +1,8 @@
 package de.hoffmato.preussentipp.rest;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
-import de.hoffmato.preussentipp.dto.LoginDTO;
-import de.hoffmato.preussentipp.dto.UserDTO;
-import de.hoffmato.preussentipp.service.AuthenticationService;
-
-import javax.servlet.http.HttpServletResponse;
 
 /**
  * Authentication rest controller
@@ -20,16 +12,20 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping(value = "/api")
 public class Authentication {
 
-    @Autowired
-    private AuthenticationService authenticationService;
-
-    @RequestMapping(value = "/authenticate",method = RequestMethod.POST)
-    public UserDTO authenticate(@RequestBody LoginDTO loginDTO, HttpServletResponse response) throws Exception{
-        return authenticationService.authenticate(loginDTO,response);
-    }
-
-    @RequestMapping(value = "/logout",method = RequestMethod.GET)
-    public void logout(){
-        authenticationService.logout();
-    }
+//    @Autowired
+//    private AuthenticationService authenticationService;
+//
+//    @RequestMapping(value = "/authenticate",method = RequestMethod.POST)
+//    public UserDTO authenticate(@RequestBody LoginDTO loginDTO, HttpServletResponse response) throws Exception{
+//        return authenticationService.authenticate(loginDTO,response);
+//    }
+//
+//    @RequestMapping(value = "/logout",method = RequestMethod.GET)
+//    public void logout(){
+//        authenticationService.logout();
+//    }
+	@RequestMapping(value = "/test", method = RequestMethod.GET)
+	public void logout() {
+		
+	}
 }
